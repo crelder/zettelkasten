@@ -39,6 +39,8 @@ Durch schreiben wird es klarer - man ist gezwungen, es selbst zu schreiben
 Man kann leicht Skizzen, Pfeile, etc. hinzufügen - kann Gedanken eher so niederschreiben, wie sie im eigenen Gehirn repräsentiert sind.
 
 ## What do the programs related to the zettelkasten do?
+All programms run with pyhton3. You can install it here: https://www.python.org/downloads/
+
 1. Health check (checkZettelkasten.py): nur read auf die Dateien im Zettelkasten. Prüft die Gesamtkonistenz des Zettelkastens auf mehrere Kriterien.
 
 2. Gephi Format File creater (buildGraphFile.py) (gestern noch eine Nachtsession eingelegt bis 3 Uhr - Du siehst, das wird mit dem Programmiernerd noch was…)
