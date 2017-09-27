@@ -27,13 +27,14 @@ Beispiele:
 
 ----------
 
-Für eine Sprache entscheiden
-Für ein Format entscheiden
-Nur Zettel (Filter für vorschnelle „Gedanken“, bewusster Filter für die hohe Quantität gegenüber Qualität)
+- Für eine Sprache entscheiden
+- Für ein Format entscheiden
+- Nur Zettel (Filter für vorschnelle „Gedanken“, bewusster Filter für die hohe Quantität gegenüber Qualität)
 
 See folder with example data.
 
 You do not need these programms 
+
 Screenshots of files in the folder with preview.
 Screenshots of program with zettelnames without letter and afterwards with letter.
 Screenshots of health check zettelkasten.
