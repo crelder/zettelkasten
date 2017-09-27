@@ -33,10 +33,18 @@ Nur Zettel (Filter für vorschnelle „Gedanken“, bewusster Filter für die ho
 
 See folder with example data.
 
+You do not need these programms 
+Screenshots of files in the folder with preview.
+Screenshots of program with zettelnames without letter and afterwards with letter.
+Screenshots of health check zettelkasten.
+
+
 ## Why it functions this way and discussion of fullfilment of the requirements
 Virtuelle Zettelkasten nicht so gut funktioniert.
 Durch schreiben wird es klarer - man ist gezwungen, es selbst zu schreiben
 Man kann leicht Skizzen, Pfeile, etc. hinzufügen - kann Gedanken eher so niederschreiben, wie sie im eigenen Gehirn repräsentiert sind.
+
+Software has the problem that it lives not very long. You do not need a single program to run the zettelkasten. You can just use the folder and search feature of a MAC, Windows or Linux operating system. If this fails you can just use your printed file list with the slips of paper (Zettel).
 
 ## What do the programs related to the zettelkasten do?
 All programms run with pyhton3. You can install it here: https://www.python.org/downloads/
