@@ -1,18 +1,18 @@
 # zettelkasten
 The following project proposes a personal knowledge management system which is robust, cheap and build to last a lifetime.
 
-## Solve the problem "What to do with a good thought?"
+## The problem: "What to do with a good thought?"
 Grundsätzlicher Nutzen eines Systems für eigene oder fremde Gedanken
 - Wiederfinden von Gedanken (Annahme: Kenntnis der Existenz des Gedankens)
 - Aufzeigen relevanter Gedanken in gewissem Kontext (Annahme: Unkenntnis der Existenz des Gedankens)
 
-## Requirements for a system for own (or others) thoughts
+## Requirements for a system for own thoughts
 - Robust 				        (Voraussetzung für Nutzung)
 - Langlebig (z.B. auf Lebenszeit ausgelegt) (Voraussetzung für Nutzung)
 - Input ≠ „schlechter Input“		        (Voraussetzung für Nutzung)
 - System generiert einen Output und dadurch einen Nutzen für mich, d.h. ich nutze es. (wichtig, da Inputerzeugung ressourcenaufwendig)
 
-## How this propsed system functions
+## How this system works
 Format der Zettelnamen ist immer
 [ID] - [Schlagwörter] - [Quelle] - [Links]
 
@@ -40,14 +40,14 @@ Screenshots of program with zettelnames without letter and afterwards with lette
 Screenshots of health check zettelkasten.
 
 
-## Why it functions this way and discussion of fullfilment of the requirements
+## Why it functions this way
 Virtuelle Zettelkasten nicht so gut funktioniert.
 Durch schreiben wird es klarer - man ist gezwungen, es selbst zu schreiben
 Man kann leicht Skizzen, Pfeile, etc. hinzufügen - kann Gedanken eher so niederschreiben, wie sie im eigenen Gehirn repräsentiert sind.
 
 Software has the problem that it lives not very long. You do not need a single program to run the zettelkasten. You can just use the folder and search feature of a MAC, Windows or Linux operating system. If this fails you can just use your printed file list with the slips of paper (Zettel).
 
-## What do the programs related to the zettelkasten do?
+## What do the programs do?
 All programms run with pyhton3. You can install it here: https://www.python.org/downloads/
 
 1. Health check (checkZettelkasten.py): nur read auf die Dateien im Zettelkasten. Prüft die Gesamtkonistenz des Zettelkastens auf mehrere Kriterien.
@@ -75,6 +75,6 @@ See testset, wo Testdaten so prepariert sind, sodass man die Wirkung der Program
 ## Limits of the zettelkasten
 If you have to deliver a concrete project with a deadline (e.g. thesis, dissertation, book) then maybe it is better to fill a file directly with your thoughts.
 
-## Source of inspiration
+## Sources of inspiration
 The Zettelkasten is inspired by the function of Video wissenschaftliche Auswertung. Zeitungsartikel. Youtube Video Luhmann.
 
