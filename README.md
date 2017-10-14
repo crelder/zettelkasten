@@ -1,5 +1,7 @@
 # zettelkasten
 The following project proposes a personal knowledge management system which is robust, cheap and build to last a lifetime.
+Go to the Wiki tab in order to learn more about it.
+The function of the programs are:
 
 ## The problem: "What to do with a good thought?"
 Grundsätzlicher Nutzen eines Systems für eigene oder fremde Gedanken
