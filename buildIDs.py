@@ -1,6 +1,5 @@
 #!/usr/bin/env
 # -*- coding: utf-8 -*-
-#test
 
 import os, re, string
 
