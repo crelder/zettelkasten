@@ -1,6 +1,8 @@
 #!/usr/bin/env
 # -*- coding: utf-8 -*-
 
+# This program creates a text-file in the folder "/backups" which contains all the names of the zettel in the folder zettelkasten. You can use this text-file as a backup for the meta-data of all the zettel. You can also print the text-file in order to increase security.
+
 import os, re, time
 
 # Location of Zettelkasten-director saved in a variable "zettelkastenDirectory"

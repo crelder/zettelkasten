@@ -21,51 +21,8 @@ def zettelFilter(allFilenames):
 ###### FUNCTIONS ########
 #########################
 
-######### Check, if Literaturesources exist in Bibtex file ###########
-def getBibkeysZettel(allZettelNames):
-    a = []
-    for zettelName in allZettelNames:
-        if zettelName.find("-", 9) != -1:
-            a.append(zettelName[zettelName.find("-", 9)+2:])
 
-    b = re.findall('[a-zA-Z,]+\d{4}', ' '.join(a))
-    c = map(lambda x:x.lower(), b)
-    bibkeys = map(lambda x:x.replace(" ", ""), c)
-
-    return bibkeys
-
-def getBibkeysBibfile(string):
-    bibkeys = re.findall('[@]{1}\S+[{]{1}[A-Za-z]+\d{4}[,]{1}', string)
-    bibkeys = map(lambda x: x[x.find("{") +1 : len(x)-1], bibkeys)
-    return bibkeys
-
-def checkBibkeyExistence(bibkeysZettel, bibkeysBibfile):
-    missingBibkeys = []
-    for bibkey in bibkeysZettel:
-        if not bibkey in bibkeysBibfile:
-            missingBibkeys.append(bibkey)
-    return list(set(missingBibkeys))
-
-def getMissingBibkeys(zettelkastenDirectory):
-    bibkeysZettel = getBibkeysZettel(zettelFilter(zettelkastenDirectory))
-    bibfile = open('Dissertation.bib')
-    bibkeysBibfile = sorted(getBibkeysBibfile(bibfile.read()))
-    return checkBibkeyExistence(bibkeysZettel, bibkeysBibfile)
-
-
-################## Check Format of links ########################
-#def getWrongFormats(allFilenames):
-#    sortedFilenames = map(lambda x: x[8:len(x)-4], zettelFilter(allFilenames))
-    # Tolerant criteria for identifying potential (wrong) links and IDs
-#    findings = re.findall("\S{0,3}\d{5,20}\D{3}", ', '.join(sortedFilenames))
-#    wrongFormats = []
-#    for x in findings:
-#        if not re.match("\d{6}[a-z]{1}", x):  # Hier muss noch die Suche geschärft werden.
-#            wrongFormats.append(x)
-#    return wrongFormats
-
-
-################## Check if any IDs are doubled ##########################
+################## Check if all IDs are unique ##########################
 def getDoubleIDs(allFilenames):
     results = []
     for filename in zettelFilter(allFilenames):
@@ -118,7 +75,7 @@ print( "### ZETTELKASTEN HEALTH CHECK ###")
 print( "#################################")
 print( " ")
 
-### Check Links ###
+### Check, if all links point to an existing ID ###
 a = getEmptyLinks(zettelkastenDirectory)
 if a:
     print( "Broken links!")
@@ -129,7 +86,7 @@ else:
 print( " ")
 
 
-### Check IDs ###
+### Check if all IDs are unique ###
 b = getDoubleIDs(zettelkastenDirectory)
 if b:
     print( "These IDs exist several times!")
@@ -140,18 +97,7 @@ else:
 print( " ")
 
 
-### Check Format of Links ####
-#c = getWrongFormats(zettelkastenDirectory)
-#if c: #Error!
-#    print( "The following link formats are not correct!"
-#    for i in c:
-#        print( i
-#else:
-#    "All links have the correct format."
-#print( " "
-
-
-################### Check, if IDs have the correct format ########
+### Check, if IDs have the correct format ###
 e = getIDsWithUncorrectFormat(zettelkastenDirectory)
 if e:
     print( "The following IDs have a wrong format!")
@@ -159,17 +105,6 @@ if e:
         print( i)
 else:
     print( "All IDs have the correct format.")
-print( " ")
-
-
-### Check, if Literaturesources exist in Bibtex file ###
-d = sorted(getMissingBibkeys(zettelkastenDirectory))
-if d:
-    print( "The following literature sources are not in the bibtex file!")
-    for i in d:
-        print( i)
-else:
-    print( "All literature sources are in the bibtex file.")
 print( " ")
 
 

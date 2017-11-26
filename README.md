@@ -6,12 +6,8 @@ Go to the Wiki tab (LINK) in order to learn more about it.
 ## Supporting python programs
 All programs have low complexity. The philosophy is that in order to use a personal knowledge management system that lasts a life time, you should be able to build it your self. You do not need these programs in order to use the zettelkasten. If you do not have programming skills, I recommend you order for example the book Python Kompakt (LINK) and learn the little programs and what they do.
 
-All programs run with python3. You can install it here: https://www.python.org/downloads/. After the installation you can run the programs by either double clicking on them. Or navigate in the terminal (Mac or Linux) or cmd (Windows) to the folder of the programs and type 
-    ```python NAMEOFTHEPROGRAM.py```
-or 
-    ```py NAMEOFTHEPROGRAM.py```
-
-".py“ stands for python-files.
+All programs run with python3. You can install it here: https://www.python.org/downloads/. After the installation you can run the programs by either double clicking on them. Or navigate in the terminal (Mac or Linux) or cmd (Windows) to the folder of the programs and type ```python NAMEOFTHEPROGRAM.py``` or ```py NAMEOFTHEPROGRAM.py```
+`.py` stands for python-files.
 
 The function of the programs are
 * check zettelkasten integrity (zettelkastenhealth.py)
