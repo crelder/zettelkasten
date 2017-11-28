@@ -16,6 +16,7 @@ window.attributes("-fullscreen", True)
 
 if platform.startswith('win32'):
 	pathToZettel = "../Zettelkasten/"
+	#### Workaround für tkinter (Win) und Tkinter (Mac)
 elif platform.startswith('darwin'):
 	pathToZettel = "../Zettelkasten/"
 
