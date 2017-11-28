@@ -1,6 +1,6 @@
 # zettelkasten
 
-The following project proposes a personal knowledge management system that is robust, cheap and build to last a lifetime.
+The following project proposes a personal knowledge management system that is robust, cheap and built to last a lifetime.
 
 ## Motivation
 
@@ -20,7 +20,10 @@ All programs run with [python3](https://de.wikipedia.org/wiki/Python_(Programmie
 
 The following programs make it easier to work with the personal knowledge management system called "zettelkasten":
 
-* Check the zettelkasten's integrity (`checkZettelkasten.py`). This program operates read only on the files in the zettelkasten. It checks, if your zettelkasten is consistent. The criteria are:
+
+### checkZettelkasten.py
+
+Check the zettelkasten's integrity (`checkZettelkasten.py`). This program operates read only on the files in the zettelkasten. It checks, if your zettelkasten is consistent. The criteria are:
 
   * all IDs are in the correct format and unique
   * links have the correct format
@@ -30,24 +33,33 @@ The following programs make it easier to work with the personal knowledge manage
 
 ![If your zettelkasten is alright, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/checkZettelkasten.PNG "Results of checkZettelkasten.py")
 
-* Assign correct IDs to all files in the folder "/zettel" (`buildIDs.py`). This program automatically assigns a correct small letter to a zettel ID.
+
+### buildIDs.py
+
+Assign correct IDs to all files in the folder "/zettel" (`buildIDs.py`). This program automatically assigns a correct small letter to a zettel ID.
 
 ![After you renamed the png file names it looks like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/zettel-7.PNG "Results of the program buildIDs.py")
 
 ![The program buildIDs.py then automatically creates unique IDs.](https://github.com/crelder/zettelkasten/blob/master/pictures/zettel-8.PNG "Results of the program buildIDs.py")
 
-* Shows how a certain zettel interlinks with other zettel in the zettelkasten (`link_overview.py`). 
+
+### link_overview.py
+
+Shows how a certain zettel interlinks with other zettel in the zettelkasten (`link_overview.py`). 
 
 ![The program link_overview.py shows how the zettel are interlinked.](https://github.com/crelder/zettelkasten/blob/master/pictures/search-linkeOverview.PNG "Shows how the zettel are interlinked.")
 
 Program features are:
 
-  * If you position the cursor on a zettel and press down the left mouse button, the zettel will enlarge in order to read it better.
+* If you position the cursor on a zettel and press down the left mouse button, the zettel will enlarge in order to read it better.
 
-  * If you right click on a certain zettel, the whole network will rebuild around this specific zettel.
+* If you right click on a certain zettel, the whole network will rebuild around this specific zettel.
 
-  * You can write a certain zettel ID in the field and hit enter. The network will be then rebuild around this specific zettel.
+* You can write a certain zettel ID in the field and hit enter. The network will be then rebuild around this specific zettel.
 
 This program is only useful, if you have more than about 1000 zettel in your zettelkasten. It is for advanced use and a more complicated program to understand. Note: if you use a Mac you have to change in line 4 "tkinter" to "Tkinter" (for now this is the workaround).
 
-* Generate a list with the filename (metadata) of every zettel and save it in the folder "/Backups" (`backup.py`). You can print this list every now and then and store it in the physical zettelkasten as a backup in case your computer crashes. From this list and the physical zettel you can always completly recover your digital zettelkasten. 
+
+### backup.py
+
+Generate a list with the filename (metadata) of every zettel and save it in the folder "/Backups" (`backup.py`). You can print this list every now and then and store it in the physical zettelkasten as a backup in case your computer crashes. From this list and the physical zettel you can always completly recover your digital zettelkasten. 
