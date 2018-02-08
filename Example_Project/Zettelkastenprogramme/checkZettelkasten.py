@@ -12,7 +12,7 @@ zettelkastenDirectory = os.listdir('../Zettelkasten') #Link to Zettelkasten-dire
 def zettelFilter(allFilenames):
     filteredFilenames = []
     for fileName in sorted(allFilenames):
-        if fileName.endswith(".png"):
+        if fileName.endswith(".png") or fileName.endswith(".txt") or fileName.endswith(".pdf"):
             filteredFilenames.append(fileName)
     return filteredFilenames
 
@@ -21,8 +21,7 @@ def zettelFilter(allFilenames):
 ###### FUNCTIONS ########
 #########################
 
-
-################## Check if all IDs are unique ##########################
+################## Check if any IDs are doubled ##########################
 def getDoubleIDs(allFilenames):
     results = []
     for filename in zettelFilter(allFilenames):
@@ -31,7 +30,7 @@ def getDoubleIDs(allFilenames):
         for n in liste:
             if filename.startswith(n[:7]):
                 results.append(n[:7])
-	### Remove doubled IDs in variable results
+    ### Remove doubled IDs in variable results
     cleanResults = []
     if list(set(results)):
         for i in list(set(results)):
@@ -51,7 +50,8 @@ def getEmptyLinks(allFilenames):
     emptyLinks = []
     for link in foundLinks:
         if not link in ids:
-             emptyLinks.append(link)
+            print("link in ids:", link in ids)
+            emptyLinks.append(link)
     return emptyLinks
 
 ################### Check, if IDs have the correct format #################
@@ -74,7 +74,7 @@ print( "### ZETTELKASTEN HEALTH CHECK ###")
 print( "#################################")
 print( " ")
 
-### Check, if all links point to an existing ID ###
+### Check Links ###
 a = getEmptyLinks(zettelkastenDirectory)
 if a:
     print( "Broken links!")
@@ -85,7 +85,7 @@ else:
 print( " ")
 
 
-### Check if all IDs are unique ###
+### Check IDs ###
 b = getDoubleIDs(zettelkastenDirectory)
 if b:
     print( "These IDs exist several times!")
@@ -96,7 +96,7 @@ else:
 print( " ")
 
 
-### Check, if IDs have the correct format ###
+################### Check, if IDs have the correct format ########
 e = getIDsWithUncorrectFormat(zettelkastenDirectory)
 if e:
     print( "The following IDs have a wrong format!")
