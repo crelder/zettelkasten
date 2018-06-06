@@ -6,7 +6,7 @@ The following project proposes a personal knowledge management system that is ro
 
 We live in a knowledge-based society (German: "Wissensgesellschaft"). There are projects like Wikipedia, where collective knowledge about the world is processed and stored. However what about personal knowledge? Is there a way to equally enrich the way we process and store **personal knowledge** like the project Wikipedia does for collective knowledge?
 
-This project might be the answer. Go to the [Wiki tab](https://github.com/crelder/zettelkasten/wiki) in order to learn more about it.
+This project might be the answer. Go to the [Wiki](https://github.com/crelder/zettelkasten/wiki) in order to learn more about it.
 
 ## Supporting python programs: Philosophy
 
