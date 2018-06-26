@@ -242,7 +242,3 @@ buildCanvas(id_global)
 
 window.mainloop()
 print('Done')
-
-#To-Do:
-# Nur wenn integer zwischen 0 und 10: dann linke/recht_path-depth-variable ändern und buildcanvas(idget()) ausführen.
-# Bei gedrückter rechter Maustaste das Canvas scrollen.
