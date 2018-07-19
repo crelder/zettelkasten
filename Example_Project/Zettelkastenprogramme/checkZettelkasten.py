@@ -9,6 +9,7 @@ import os, re
 
 zettelkastenDirectory = os.listdir('../Zettelkasten') #Link to Zettelkasten-directory
 
+### Use only filenames with relevant file endings
 def zettelFilter(allFilenames):
     filteredFilenames = []
     for fileName in sorted(allFilenames):

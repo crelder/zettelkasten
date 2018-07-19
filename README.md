@@ -16,6 +16,8 @@ If you do not have programming skills, I recommend you to learn some in order to
 
 All programs run with [python3](https://de.wikipedia.org/wiki/Python_(Programmiersprache)). You can download and install the programming language [here](https://www.python.org/downloads/). After the installation you can run the programs by either double clicking on them, or navigating in the programms "terminal" (Mac or Linux) or "cmd" (Windows) to the folder of the programs and type ```python NAMEOFTHEPROGRAM.py``` or ```py NAMEOFTHEPROGRAM.py``` (`.py` stands for python-files).
 
+All programs are tested on a MacOS (10.13.5).
+
 ## Supporting python programs: Use
 
 The following programs make it easier to work with the personal knowledge management system called "zettelkasten":
@@ -29,8 +31,10 @@ Check the zettelkasten's integrity (`checkZettelkasten.py`). This program operat
   * links have the correct format
   * all links point to an existing ID
 
+With errors:
 ![If your zettelkasten is damaged, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/checkZettelkasten-2.PNG "Results of checkZettelkasten.py")
 
+Without errors - the zettelkasten is consistent:
 ![If your zettelkasten is alright, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/checkZettelkasten.PNG "Results of checkZettelkasten.py")
 
 
@@ -58,6 +62,28 @@ Program features are:
 * You can write a certain zettel ID in the field and hit enter. The network will be then rebuild around this specific zettel.
 
 This program is only useful, if you have more than about 1000 zettel in your zettelkasten. It is for advanced use and a more complicated program to understand. Note: if you use a Mac you have to change in line 4 "tkinter" to "Tkinter" (for now this is the workaround).
+
+
+### buildGephiGraphFile.py
+
+It takes as an input the path to your zettelkasten and returns a Gephi-File (.gexf).
+
+Install the open-source Graph-Tool [Gephi](https://gephi.org/users/download/).
+
+You can then import this Gephi-File and use e.g. the Yifan Hu layout (works well for me) to display where your thoughts cluster around which topics.
+
+---
+![Overview on your thoughts.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi1.png "Gephi Hu Layout")
+
+---
+
+![Overview on your thoughts.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi2.png "Gephi Hu Layout")
+
+---
+
+![Overview on your thoughts.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi3.png "Gephi Hu Layout")
+
+---
 
 
 ### backup.py

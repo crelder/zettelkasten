@@ -2,24 +2,17 @@
 # -*- coding: utf-8 -*-
 
 from tkinter import Label, Frame, Tk, Entry, StringVar, END, IntVar, Scrollbar
-from PIL import Image, ImageTk #Hier muss statt PIL noch Pillow rein, weil das neuer ist.
+from PIL import Image, ImageTk 
 from re import findall, match
 from os import listdir, open
 from sys import platform
 from random import choice
 
-
 window = Tk(className = "-Zettelkasten-", )
 window.attributes("-fullscreen", True)
 
 #### INICIAL VARIABLES ###########################################
-
-if platform.startswith('win32'):
-	pathToZettel = "../Zettelkasten/"
-	#### Workaround für tkinter (Win) und Tkinter (Mac)
-elif platform.startswith('darwin'):
-	pathToZettel = "../Zettelkasten/"
-
+pathToZettel = "../Zettelkasten/"
 miniatureWidth = 150
 depth_right_global = 3
 depth_left_global = 3
@@ -56,7 +49,8 @@ def buildPicThumbforID(id, thumbWidth):
 			hsize = int((float(img.size[1]) * float(wpercent)))
 			return img.resize((thumbWidth, hsize), Image.ANTIALIAS)
 	except OSError:
-		path = "C:/Users/je6108/Documents/Dissertation_sync/Zettelkastenprogramme/errorImage.png"
+		# Workaround as long as there are still .txt files in the zettelkasten. Needs to get fixed!
+		path = "../errorImage.png"
 		with Image.open(path) as img:
 			wpercent = (thumbWidth / float(img.size[0]))
 			hsize = int((float(img.size[1]) * float(wpercent)))

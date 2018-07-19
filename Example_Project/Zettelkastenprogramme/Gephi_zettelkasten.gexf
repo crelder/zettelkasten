@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1" xmlns="http://www.gexf.net/1.1draft"> 
+<meta lastmodifieddate="2010-03-03+23:44"> 
+<creator>Gephi 0.7</creator> 
+</meta> 
+<graph defaultedgetype="directed" idtype="string" type="static"> 
+<nodes count="2">
+<node id="170915a" label="Neuronales Netz, Features und Beispiele, Nicht-numersiche Daten "/>
+<node id="171109a" label="Pflanzen, Signal, Sensibilität "/>
+</nodes>
+<edges count="1">
+<edge id="1" source="171109a" target="170915a"/>
+</edges>
+</graph>
+</gexf>
