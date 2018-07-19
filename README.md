@@ -70,8 +70,13 @@ It takes as an input the path to your zettelkasten and returns a Gephi-File (.ge
 
 Install the open-source Graph-Tool [Gephi](https://gephi.org/users/download/).
 
-You can then import this Gephi-File and use e.g. the Yifan Hu (works well for me) to display where where your thoughts cluster around which topics.
+You can then import this Gephi-File and use e.g. the Yifan Hu layout (works well for me) to display where your thoughts cluster around which topics.
 
+![If your zettelkasten is alright, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi1.PNG "Results of checkZettelkasten.py")
+
+![If your zettelkasten is alright, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi2.PNG "Results of checkZettelkasten.py")
+
+![If your zettelkasten is alright, it will look like this.](https://github.com/crelder/zettelkasten/blob/master/pictures/gephi3.PNG "Results of checkZettelkasten.py")
 
 
 
