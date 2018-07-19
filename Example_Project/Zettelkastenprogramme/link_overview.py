@@ -2,24 +2,17 @@
 # -*- coding: utf-8 -*-
 
 from tkinter import Label, Frame, Tk, Entry, StringVar, END, IntVar, Scrollbar
-from PIL import Image, ImageTk #Hier muss statt PIL noch Pillow rein, weil das neuer ist.
+from PIL import Image, ImageTk 
 from re import findall, match
 from os import listdir, open
 from sys import platform
 from random import choice
 
-
 window = Tk(className = "-Zettelkasten-", )
 window.attributes("-fullscreen", True)
 
 #### INICIAL VARIABLES ###########################################
-
-if platform.startswith('win32'):
-	pathToZettel = "../Zettelkasten/"
-	#### Workaround für tkinter (Win) und Tkinter (Mac)
-elif platform.startswith('darwin'):
-	pathToZettel = "../Zettelkasten/"
-
+pathToZettel = "../Zettelkasten/"
 miniatureWidth = 150
 depth_right_global = 3
 depth_left_global = 3

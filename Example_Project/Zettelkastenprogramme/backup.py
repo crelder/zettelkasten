@@ -18,7 +18,7 @@ def zettelFilter(allFilenames):
             filteredFilenames.append(fileName[:len(fileName)-4]) 
     return filteredFilenames 
 
-# Define Filename of the Backup-File
+# Define Filename structure of every file
 filename = time.strftime("%y%m%d_%H-%M-%S", time.localtime()) + "_Backup_Zettelkasten_Metadaten.txt"
 
 # Create a file with the defined filename
