@@ -49,7 +49,8 @@ def buildPicThumbforID(id, thumbWidth):
 			hsize = int((float(img.size[1]) * float(wpercent)))
 			return img.resize((thumbWidth, hsize), Image.ANTIALIAS)
 	except OSError:
-		path = "C:/Users/je6108/Documents/Dissertation_sync/Zettelkastenprogramme/errorImage.png"
+		# Workaround as long as there are still .txt files in the zettelkasten. Needs to get fixed!
+		path = "../errorImage.png"
 		with Image.open(path) as img:
 			wpercent = (thumbWidth / float(img.size[0]))
 			hsize = int((float(img.size[1]) * float(wpercent)))

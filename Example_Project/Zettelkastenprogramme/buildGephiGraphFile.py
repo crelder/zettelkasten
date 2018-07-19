@@ -74,5 +74,5 @@ edgecount = '<edges count="' + str(len(edges)) + '">\n'
 
 end = '</graph>\n</gexf>'
 
-Gephi_zettelkasetn = open('Gephi_zettelkasetn.gexf', 'w')
+Gephi_zettelkasetn = open('Gephi_zettelkasten.gexf', 'w')
 Gephi_zettelkasetn.write(header + nodeCount + '\n'.join(nodes) + '\n</nodes>\n'+ edgecount + '\n'.join(edges) + '\n</edges>\n' + end)
