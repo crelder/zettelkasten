@@ -2,6 +2,8 @@
 
 The following project proposes a personal knowledge management system that is robust, cheap and built to last a lifetime.
 
+NOTE: I still use the underlying system for personal management, but wrote a cli tool in Go called `zet`. As of July 2022, zettelkasten is deprecated and replaced by [zet](https://github.com/crelder/zet). 
+
 ## Motivation
 
 We live in a knowledge-based society (German: "Wissensgesellschaft"). There are projects like Wikipedia, where collective knowledge about the world is processed and stored. However what about personal knowledge? Is there a way to equally enrich the way we process and store **personal knowledge** like the project Wikipedia does for collective knowledge?
